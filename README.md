@@ -1,8 +1,8 @@
 # Fiche aide Jenkins
 
-| <img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/1336/1336682.png" alt="terminal" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/3867/3867652.png" alt="pipeline-script" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/7098/7098010.png" alt="mouse" width="100"/>
-| -------- | ------- | -------- | -------- |
-| Reflexion  | Code terminal    | Script pipeline  | Mouse actions  |
+| <img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/1336/1336682.png" alt="terminal" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/3867/3867652.png" alt="pipeline-script" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/7098/7098010.png" alt="mouse" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/675/675579.png" alt="tools" width="100"/> |
+| -------- | ------- | -------- | -------- | -------- |
+| Reflexion  | Code terminal    | Script pipeline  | Mouse actions  | Outils  |
 
 <img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/>
 
@@ -142,7 +142,7 @@ pipeline {
     stages {
         // Toutes les étapes précédentes
         ...
-        stage('Install dependencies and build the app') {
+        stage('Build image of the project) {
             steps {
                 sh '''
                     docker login -u <mon-utilisateur-docker-hub> -p <mon-token ou mot-de-passe>
@@ -169,6 +169,10 @@ Vidéo privée : https://www.youtube.com/watch?v=KA4YH4hzjCg (envoyez un email �
 
 **Serveur SMTP ?**
 
+<img src="https://cdn-icons-png.flaticon.com/512/675/675579.png" alt="tools" width="100"/>
+
+**Créer un compte sur https://mailtrap.io/**
+
 <img src="https://cdn-icons-png.flaticon.com/512/7098/7098010.png" alt="mouse" width="100"/>
 
 **Configurer le service d'envoie de mail**
@@ -177,4 +181,32 @@ Vidéo privée : https://www.youtube.com/watch?v=KA4YH4hzjCg (envoyez un email �
 
 <img src="https://cdn-icons-png.flaticon.com/512/3867/3867652.png" alt="pipeline-script" width="100"/>
 
-**Etape d'envoie de notification en fin de pipeline**
+**Etape d'envoi de notification en fin de pipeline**
+
+```
+
+pipeline {
+    agent {
+        label '<mon-agent>'
+    }
+
+    stages {
+        // Tous les autres stages
+        ...
+        stage('Build image of the project') {
+            steps {
+                docker login -u <mon-utilisateur-docker-hub> -p <mon-token ou mot-de-passe>
+                docker build . -t <mon-utilisateur-docker-hub>/<mon-repository>
+                docker push <mon-utilisateur-docker-hub>/<mon-repository>
+            }
+        }
+    }
+    post {
+        failure {
+            mail bcc: 'us', body: 'hello wolrd', cc: 'you', from: '', replyTo: '', subject: 'hello', to: 'me'
+        }
+    }
+}
+
+
+```
