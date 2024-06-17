@@ -38,7 +38,8 @@ pipeline {
 
 **Mon premier script de pipeline**
 
-// TO-DO : Ajouter une vidéo YouTube
+[![Install jenkins agent](https://img.youtube.com/vi/Q5ySlzAWlbE/0.jpg)](https://www.youtube.com/watch?v=Q5ySlzAWlbE&list=PLlnA7yc_4K0hlppiX--DNEGfi9C7dsSHb&index=3
+)
 
 ```
 pipeline {
