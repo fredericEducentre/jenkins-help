@@ -21,7 +21,7 @@ docker run --name jenkins_agent_container --network jenkins_network --restart=on
 ```
 <img src="https://cdn-icons-png.flaticon.com/512/3867/3867652.png" alt="pipeline-script" width="100"/>
 
-**Squellette de pipeline**
+**Squelette de pipeline**
 ```
 pipeline {
     agent any
