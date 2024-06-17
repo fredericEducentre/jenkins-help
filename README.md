@@ -145,3 +145,17 @@ pipeline {
     }
 }
 ```
+
+<img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/>
+
+**webhook ?**
+
+<img src="https://cdn-icons-png.flaticon.com/512/7098/7098010.png" alt="mouse" width="100"/>
+
+// TO-DO : Ajouter une vidéo YouTube
+
+<img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/>
+
+**Serveur SMTP ?**
+
+// TO-DO : Ajouter une vidéo YouTube
