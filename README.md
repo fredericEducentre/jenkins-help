@@ -15,7 +15,7 @@
 docker network create jenkins_network
 docker run --name jenkins_container --network jenkins_network -p 8080:8080 -p 50000:50000 --restart=on-failure jenkins/jenkins:lts-jdk17
 ```
-En savoir plus : https://github.com/jenkinsci/docker/blob/master/README.md
+> En savoir plus : https://github.com/jenkinsci/docker/blob/master/README.md
 
 **Installer un agent Jenkins**
 
@@ -25,7 +25,7 @@ En savoir plus : https://github.com/jenkinsci/docker/blob/master/README.md
 docker run --name jenkins_agent_container --network jenkins_network --restart=on-failure --init jenkins/inbound-agent -url http://jenkins_container:8080 <secret> <agent name>
 ```
 
-En savoir plus : https://hub.docker.com/r/jenkins/inbound-agent
+> En savoir plus : https://hub.docker.com/r/jenkins/inbound-agent
 
 <img src="https://cdn-icons-png.flaticon.com/512/3867/3867652.png" alt="pipeline-script" width="100"/>
 
