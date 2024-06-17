@@ -161,6 +161,8 @@ pipeline {
 
 <img src="https://cdn-icons-png.flaticon.com/512/7098/7098010.png" alt="mouse" width="100"/>
 
+**Déclencher le job de pipeline lors d'un push sur Github**
+
 // TO-DO : Ajouter une vidéo YouTube
 
 <img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/>
@@ -169,4 +171,10 @@ pipeline {
 
 <img src="https://cdn-icons-png.flaticon.com/512/7098/7098010.png" alt="mouse" width="100"/>
 
+**Configurer le service d'envoie de mail**
+
 // TO-DO : Ajouter une vidéo YouTube
+
+<img src="https://cdn-icons-png.flaticon.com/512/3867/3867652.png" alt="pipeline-script" width="100"/>
+
+**Etape d'envoie de notification en fin de pipeline**
