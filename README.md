@@ -64,7 +64,7 @@ pipeline {
     stages {
         stage('Clone the repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/fredericEducentre/zodiacJS.git'
+                git branch: 'main', url: 'https://github.com/<utilisateur_github>/<repository>.git'
             }
         }
     }
@@ -76,13 +76,13 @@ pipeline {
 ```
 pipeline {
     agent {
-        label 'agent-node'
+        label '<mon-agent-jenkins>'
     }
 
     stages {
         stage('Clone the repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/fredericEducentre/zodiacJS.git'
+                git branch: 'main', url: 'https://github.com/<utilisateur_github>/<repository>.git'
             }
         }
         stage('Install dependencies and build the app') {
@@ -102,7 +102,7 @@ pipeline {
 ```
 pipeline {
     agent {
-        label 'agent-node'
+        label '<mon-agent-jenkins>'
     }
 
     stages {
@@ -128,7 +128,7 @@ pipeline {
 ```
 pipeline {
     agent {
-        label 'agent-node'
+        label '<mon-agent-jenkins>'
     }
 
     stages {
