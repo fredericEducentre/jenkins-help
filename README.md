@@ -1,5 +1,9 @@
 # Fiche aide Jenkins
 
+| <img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/1336/1336682.png" alt="terminal" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/3867/3867652.png" alt="pipeline-script" width="100"/> | <img src="https://cdn-icons-png.flaticon.com/512/7098/7098010.png" alt="mouse" width="100"/>
+| -------- | ------- | -------- | -------- |
+| Reflexion  | Code terminal    | Script pipeline  | Mouse actions  |
+
 <img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/>
 
 **Continuous integration ? Continuous delivery ? Pipeline ? Script de pipeline ? Jenkins agent ?**
@@ -162,5 +166,7 @@ pipeline {
 <img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/>
 
 **Serveur SMTP ?**
+
+<img src="https://cdn-icons-png.flaticon.com/512/7098/7098010.png" alt="mouse" width="100"/>
 
 // TO-DO : Ajouter une vidéo YouTube
