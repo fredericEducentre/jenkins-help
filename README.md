@@ -163,7 +163,7 @@ pipeline {
 
 **Déclencher le job de pipeline lors d'un push sur Github**
 
-// TO-DO : Ajouter une vidéo YouTube
+Vidéo privée : https://www.youtube.com/watch?v=KA4YH4hzjCg (envoyez un email à frederic@educentre.fr pour consulter cette vidéo)
 
 <img src="https://cdn-icons-png.flaticon.com/512/9044/9044199.png" alt="brain" width="100"/>
 
