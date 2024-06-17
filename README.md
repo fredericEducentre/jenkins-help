@@ -14,7 +14,7 @@ docker run --name jenkins_container --network jenkins_network -p 8080:8080 -p 50
 
 **Installer un agent Jenkins**
 
-// TO-DO : Ajouter une vidéo YouTube
+[![Install jenkins agent](https://img.youtube.com/vi/6hYeuHOOiVs/0.jpg)](https://www.youtube.com/watch?v=6hYeuHOOiVs&list=PLlnA7yc_4K0hlppiX--DNEGfi9C7dsSHb&index=4)
 
 ```
 docker run --name jenkins_agent_container --network jenkins_network --restart=on-failure --init jenkins/inbound-agent -url http://jenkins_container:8080 <secret> <agent name>
