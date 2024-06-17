@@ -203,7 +203,7 @@ pipeline {
     }
     post {
         failure {
-            mail bcc: 'us', body: 'hello wolrd', cc: 'you', from: '', replyTo: '', subject: 'hello', to: 'me'
+            mail bcc: 'secretDestinataire@mail.com', body: 'the pipeline failed', cc: 'partner@mail.com', from: 'me@mail.com', subject: 'pipeline failed', to: 'me@mail.com'
         }
     }
 }
